@@ -113,8 +113,6 @@ function TxButton ({
 
     setStatus('Sending...');
 
-    (isSudo() && sudoTx()) ||
-    (isUncheckedSudo() && uncheckedSudoTx()) ||
     (isSigned() && signedTx()) ||
     (isUnsigned() && unsignedTx()) ||
     (isQuery() && query()) ||

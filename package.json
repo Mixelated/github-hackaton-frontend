@@ -9,9 +9,6 @@
     "build": "react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.js",
-    "lint:ci": "eslint src/**/*.js --max-warnings=0",
-    "lint:fix": "eslint --fix src/**/*.js",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build -m '[ci skip] Updates'"
   },
@@ -50,22 +47,6 @@
     "eslint-plugin-react-hooks": "2.x",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^3.1.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "standard"
-    ],
-    "plugins": [
-      "only-warn"
-    ],
-    "rules": {
-      "semi": [
-        1,
-        "always"
-      ],
-      "no-extra-semi": 1
-    }
   },
   "engines": {
     "node": ">=12",
