@@ -2,4 +2,3 @@ node_modules
 .circleci
 # Local Netlify folder
 .netlify
-build
